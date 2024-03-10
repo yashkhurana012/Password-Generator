@@ -1,89 +1,82 @@
-*{
+* {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
 }
-body{
-  background: linear-gradient(to bottom, #323232 0%, #3F3F3F 40%, #1C1C1C 150%), linear-gradient(to top, rgba(255,255,255,0.40) 0%, rgba(0,0,0,0.25) 200%);
- background-blend-mode: multiply;
- color: white;
-}
-.App{
+
+body {
+  background: linear-gradient(to bottom, #2f2f2f, #1a1a1a);
+  color: #ffffff;
+  font-family: Arial, sans-serif;
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 100%;
+  align-items: center;
   height: 100vh;
 }
-#bot{
-  padding: 7px;
+
+.container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  width: 400px;
 }
-#EncryptedPassword{
-  color: white;
-  font-weight: 800;
-}
-.box{
-  padding: 20px;
-  width: 80%;
-}
-h1{
+
+h1 {
+  font-size: 24px;
   text-align: center;
+  margin-bottom: 20px;
 }
-.box1{
-  display: flex;
+
+.input-group {
+  margin-bottom: 20px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.input-group input {
   width: 100%;
-  margin-top: 1rem;
-  
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
-.box1 input{
-width: 70%;
-padding: 10px;
-border: 1px solid rgb(192, 191, 191);
 
-}
-.box1 button{
-width: 30%;
-padding: 10px;
-font-size: 18px;
-background: rgb(31, 54, 230);
-border: 1px solid rgb(31, 54, 230);
-color: white;
-
-
-}
-.box2{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-top: 2rem;
-  
-}
-label{
-display: flex;
-gap: 10px;
-}
-.Password-length{
+.password-length {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-button{
+
+.password-length label {
+  font-size: 16px;
+}
+
+.password-length input {
+  width: 50px;
+  padding: 8px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.generate-btn {
+  display: block;
+  width: 100%;
   padding: 10px;
-  background: rgb(16, 17, 17);
-  color: white;
-  font-size: 600;
+  background-color: #007bff;
   border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
   cursor: pointer;
-  font-weight: 600;
-  transition: 0.5s ease-in-out;
+  transition: background-color 0.3s ease;
 }
-button:hover{
-  background-color: black;
-  border: 1px solid black;
-}
-@media screen and (max-width:425px){
-  .Password-length{
-    flex-direction: column;
-    align-items: start;
-  }
+
+.generate-btn:hover {
+  background-color: #0056b3;
 }
